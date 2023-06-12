@@ -1,0 +1,308 @@
+*{ 
+	margin: 0; 
+	padding: 0; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+}
+
+.contenedor { 	
+	width: 90%; 
+	max-width: 1200px; 
+	margin: auto;
+	overflow: hidden;
+
+/*----------HEADER---------------*/
+}
+
+/*header*/
+header{
+	width: 100%;
+	background: url('../imagenes/200.png');
+	background-size: cover ;
+	background-attachment: fixed; 
+	background-position: center 0;
+
+}  
+
+header .contenedor{
+	position: relative;
+	height: 700px;
+}
+
+header .menu {
+	width: 100%;
+	text-align: center;
+}
+
+header {
+	width: 100%;
+	text-align: right;
+}
+
+header .menu a{
+	color: #B98440; 
+	font-size: 25px;
+	font-weight: 300;
+	display: inline-block; 
+	margin: 40px 20px;
+	text-decoration: none;
+	position: relative; 
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+
+
+}
+
+header .textos{
+	width: 100%; 
+	color: #B98440;
+	position: absolute;
+	top: 50%; 
+	margin-top: -52px; 
+}
+
+header .textos .nombre{
+	font-size: 50px;
+	font-weight: 600px;
+}
+
+header .textos .nombre span{
+	font-weight: 300px;
+}
+
+header .textos h3{
+	font-size: 25px;
+	font-style: italic;
+}
+
+/*-----MAIN----*/
+.main{
+	background: url('../imagenes/papel.png');
+}
+
+.main .acerca-de .contenedor{
+	overflow: visible ;
+	position: relative;
+}
+
+.main .acerca-de .foto {
+	width: 80%;
+	position: absolute;
+	left: 0;
+	top: -50px;
+	z-index: 0;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.main .acerca-de .foto img{
+	width: 100%;
+	vertical-align: top;
+
+}
+
+.main .acerca_de article {
+	background: white; /*color de fondo del texto acerca de*/
+	padding: 40px;
+	width: 50%;
+	position: relative;
+	/*top: 30px*/
+	top: 100px;
+	float: center; 
+	z-index: 1; /*indica quien comienza en el float*/
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+
+}
+
+.main .acerca-de article h3{
+	font-size: 50px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+main.acerca-de article p {
+	line-height: 30px; 
+	margin-bottom: 15px; 
+}
+
+.main .menu {
+	padding-top: 570px; 
+	margin-bottom: 200px;
+}
+
+.main .menu .titulo {
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
+	color: black;
+}
+
+.main .menu .contenedor-menu {
+	border: 5px solid white; 
+	background: #18D0B7; 
+	padding: 20px; 
+	overflow: hidden; 
+}
+
+.main .menu article {
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.main .menu article .categoria { 
+	font-size: 22px;
+	font-weight: 700;
+	/*color: green;*/
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.main .menu article .platillo {
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 4px dotted black ; 
+}
+
+.main .menu article .nombre {
+	font-size: 20px;
+	margin-bottom: 15px;
+	float: left;
+	color: #2C54C8; 
+}
+
+.main .menu article .precio {
+	float: right;
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: #2C54C8; 
+}
+
+.main .menu article .descripcion{
+	font-size: 16px;
+	color: white; 
+	clear: both; 
+}
+
+.main .menu article .contenedor-menu2 {
+	border: 1px solid black;
+	background: white;
+	padding: 10px;
+	overflow: hidden;
+}
+
+
+/*.main .galeria {
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: .8;
+	transition: .5s ease;
+
+}
+
+.main .galeria hover { 
+	cursor: crosshair;
+	width: 300px;
+	opacity: 1;
+	filter: contrast(120%);
+}
+*/
+
+.main .galeria {
+	overflow: hidden;
+}
+
+.main .galeria .foto { /*coloca mis fotos en columnas de 4x4*/
+	width: 25%;
+	float: left;
+}
+
+.main .galeria .foto img { /*ajusta mis fotos a su tamaño original y se aplica una opacidad*/
+	vertical-align: top;
+	width: 100%;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover { 
+	cursor: crosshair;
+	width: 300px;
+	opacity: 1;
+	
+}
+
+.main .ubicacion .titulo {
+	/*text-align: center;*/
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+
+
+
+.main .ubicacion .direccion{ 
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.main .ubicacion .horarios {
+	width: 50%;
+	float: right;
+	float: right;
+}
+ /*-----------------------------------------*/
+
+ .main .ubicacion .direccion .calle {
+ 	margin-bottom: 15px;
+ }
+
+ .main .ubicacion .horarios {
+ 	overflow: hidden;
+ }
+
+ .main .ubicacion .horarios h4 {
+ 	text-align: center;
+ 	margin-bottom: 20px;
+ }
+
+ .main .ubicacion .horarios .entre-semana,
+ .main .ubicacion.horarios .fin.semana {
+ 	width: 50%;
+ 	float: left;
+ 	text-align: center;
+ }
+
+ .main .mapa {
+ 	width: 100%;
+ 	overflow: hidden;
+ }
+
+ .main .mapa iframe {
+ 	width: 100%;
+ 	max-height: 600px;
+ }
+
+ /*------FOOTER----------*/
+
+ footer { 
+ 	background: white;
+ }
+
+ footer .copyright {
+ 	text-align: center;
+ 	padding: 15px 0;
+ 	color: black;
+ }
